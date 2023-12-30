@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+    }
+
+    body {
+      background-image: linear-gradient(purple, rgb(12, 185, 208));
+      height: 100vh;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .header {
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: rgb(240, 120, 120);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 35px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: aqua;
+    }
+
+    .navbar a.active {
+      color: aqua;
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      height: 100vh;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    .about-content {
+      max-width: 600px;
+      font-size: 30px;
+    }
+
+    .about-content h1 {
+      font-size: 56px;
+      font-weight: 700;
+      color: rgb(109, 239, 102);
+    }
+
+    .about-content h3 {
+      font-size: 42px;
+      font-weight: 700;
+      color: rgb(214, 208, 29);
+      margin: 20px 0 30px;
+    }
+
+    .image {
+      height: 500px;
+      width: 420px;
+      border-radius: 50%;
+    }
+
+    /* Added styles for the button */
+    .navbar button {
+      font-size: 20px;
+      color: black;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .navbar button:hover {
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Hemalatha Palluru</h1>
+    <nav class="navbar">
+        <a href="Personal Details.pdf" target="_blank">
+            <button>About</button>
+          </a>
+          <a href="Skills.pdf" target="_blank">
+            <button>Skills</button>
+          </a>
+      
+      <!-- Modified the button to use the existing styles -->
+      <a href="Hemalatha Resume1.pdf" target="_blank">
+        <button>Resume</button>
+      </a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <div class="about-content">
+      <h1 class="name">Hemalatha Palluru</h1>
+      <h3>Fullstack Developer</h3>
+      <p>I am a Fullstack developer, loves fresh ideas, ambitious challenges and very passionate about my profession.</p>
+    </div>
+    <div>
+      <img class="image" src="https://res.cloudinary.com/dsamdgjce/image/upload/v1703597037/IMG_20231226_185332_ejwylh.jpg">
+    </div>
+  </section>
+</body>
+</html>
