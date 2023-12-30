@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartwatch Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(242, 170, 212);
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fac5fc;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        #product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 35%;
+        }
+
+        #buy-now-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        #buy-now-btn:hover {
+            background-color: #ff4c3b;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Smartwatch Pro</h1>
+    </header>
+
+    <div class="container">
+        <img id="product-image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQMEBgcIAgH/xABFEAABAwMCAgUHCQYFBAMAAAABAAIDBAUREiEGMRNBUWGBByIycZGhshQVMzVCUnJ0sSNigpKiwTZUc+HwJUPC8RYkk//EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/8QAHxEBAQACAgMAAwAAAAAAAAAAAAECEQMxBBIhMkHx/9oADAMBAAIRAxEAPwDeKIiAiIgIiICIvDnBrS4kAAZJKD2ixyv434fo5HQi4NqqhvOCiaZ3g9+jOPHCxy7ceXOpifHaLcKHbPymveMtHaI26vfsgzm43OjtkHT3Cqip4+ovdjJ7B1k+pYNe/KnSwBzbTSmY9U1R5jPXp9I+OFri53K2md1Rer9LX1B2cItz6vtHHqIUU/i230pzbLSC/kJZngux26jqPvCrZRkV046u11c5st1cxp36KkywAd+nfHrJURG6N7NbS1wd1t3z4qEunF9bcaaSnkhhYH/aJL3A9o7D3q5ttvlkp4ZmylskkPTEx7am5wRjtGW59aplx7/YvZ546duT4Adaiaiqlndl/mt+6rm4UdQzMkp1t5auxWQaSVn6zEeRtyX1hc12ppw7tHNexGvYjTQmeG+J7hY64TUsxaTs7Iy14HU5vWPet78JcV0fEtF0kP7OpZ9LBqyR3jtC5w6LPMK+tldUW6dskE0sTh6Lo3lpHiN1aZaHUOSvq1pwTx++oqYrdd3tcZDphqTgbnkHdueQPt7VsoFbTKUfURFIIiICIiAiIgIiICIiAiIgg+LuJ6LhWzSXGuJdvphhb6UzznDR7Mk9QGVoq+eUJt1cZbl0twcRltMD0dJD+7pPpkdbnA56sKt5b7xUXLiQRax8ipC+ngbn0nt0mV3tcG/wLXLGF72tHNzgAPWgyKp40ukkYgpRTUMPUyCL0f7ewKDq62rrfOramaXUc/tXkg+HL2BZjUcJ8OWWpey98QsqDE6Nz4abDTpLjkaRqccswdsacnPIZjZblw3Rx3SGgt3ykSGeKklmia7DHRsa1+px1Ahwc4DTkZxtnYIS22m43OQR26hnqXk/9mMkY35nkOR3OOR7FZZ1cuSzGbjq7GVlPYIzA3ooYYy6Ppp3hjGjBzkHcOOw+0c8hjDvQ80jB7EArOeFnl1stbnHOJpInfhIeMe3T7AsGKzXhT6no/zo+JBIvfTiodBWanwNkxK1uxLQd8d6+cX8J1XDFy6CXMtJLvTVIG0g7D2OHX4FRd3lc241YB2EhwF0LXWmm4l4Wio60EtngY4SDZ0b9Ozh/wA7RyKrlj7DnRsa9iNX10oZbPX1NBXYZNTv0vPvBHcQQfFWD62Ieg1z/UsR6EfcvRi1dQCoiapl+hhx+JemwVL/AKSTH4QEFRji1pBOZGbsPLI6wtq8C8d1tbX01vvHRGOdoZDKW4fqxtq3wSe4c8LVkTBTv146T8W6vmVD2ytnjeWyBwc1w2LSN8qstxvwdJorO01E1VaqSpqYzHNLAx74yMaXFoJHtV4uoEREBERAREQEREBERAXlzg0EnqGV6VvXO0Uc7vuxuPuKDljjipdU1lDI5u8tGKpwP3pXOe73lRVjtFZfLpHbqBjTNLk6pHaGRtG5c49QHP3bkgGR44GLrSNHVQQD9VI+TGB9bcL3QU2k1dZY6uCmjc8N6WVwbhoJ68ZPgSe4KsPBNut14joOI720R1EUUtAbXEZxWh7nDzHEaW4IHP7w9apxWaG28fXCz2ygZfYqYvjjZVShgBbp1OcdgdJ1Nx1nvWQzz0Nkv1oNzmpjU8M2EF1OZmnpK3LtMIwdyC5pyM4wtf2ipt3zlLU8Qx1dUyVrnOEEga6SQnOXEkbely68KnJ+NRnvTZHzE+mv1wrrNbWR3CmtkTWQUoDWNqZg5utmdtIAO/Xv1rBePrPBYuJ6ijo42x0zmtkhjEhfhpGNySTnIOx7QqF64jqa+4dNSdJRU7II6eKnjlJDYmbNaT9pWF0r6q8XGevrPOnmIc8tZgbDGAPBc/DxcmOXtb8/jHjwy9t2rMrNeFPqej/OD4gsMex7PSCzPhT6no/zg+JdbdbXr6yrP9Qrpqyb2a3k/wCWj+ELmO9n/qVZ+MrpqxE/MtBk5PyaP4Qg0n5Q7KaHi2rdUN6RlWTUQSO3y1x3Hgcgdgx3KBZGxnoMaPBb44v4Xg4moo4ZJjT1ELi6GoDdWnPMEbZB7M9QWhLxqtlzqqHphUGnmLOliHmuGdiOY3HVnbcbrLKaoq47CPBeHyM63e1Rpmmf6EZ/jKBk7ucjW/hCoL10rSMNBd7l5ge4te0uAA6uZVuKcf8AccXeKkbbojJAaMnlsq0b54T4hpb5boSyZrq1sLXTxci13WfVns7Qp9aS8ntYaPjCla84ZOHwu8RkD+YNW7lvhluAiIrgiIgIiICIiAiIgKyvLtForn/dp5D/AElXqi+J39Fw1dpPu0Ux/oKDmLjsYv8AG0DOmkiH6qAbE8uDgMEcj1hZPxrtxNKPuwMH6qEQWwpTgDIwOpV20L+h6dsUhjz9JoIZn14/ur6y0ja+601M70Xv84Z5gAkj2BborOHqek4ciq3TMcJmMDIAwBuHfZ59n6FS7fF8XDlm8stfdRogRsH2R7F7VWqjEdVNGzGlkjmg56gSB+irMt80lEauCSmnaxhfLHFM10kTRsS5mc4HbuO3Crbrtx5T1ukZWbtae1Zbwp9T0f5wfEsSqvQast4U+p6P84PiUoWNc5lTca6USEtbK/EbW7nDtO/ith+S7jasF6p7NXVEs9HUZZE6V2XQvAyMHnpONOO0jvWrZ3tor7VseNQE787cwTnb2hZfwLbJK/jK2fIgXMinZUSOA9BrDqyezOMeKDop7GvaQ4bEYPqXMVbSmjq6iklDdcEjoiO9pLT+i6gWq/KPwbFTw3HiOmmdl0jHvgLAR5xa1xBzy31e1UzmxrDH7q9BrjyBCtnTTDm7HgF5dqf6bnO9ZysRdOLGelI0e9fG1LWSAxZdhW7WAcgqzAAc4CjcGW8A08Vbxdb2VepuHGVmh3N7Bqbnu81b4WgOF6o03EVrmb/mIwT3F2k+vYlb/W3F0CIi0BERAREQEREBERAUHxw4s4Kv7hzFtqMf/m5TihONADwheG9tHKPa0hBzjxv/AIpqx2NZn2FQ0EtGycNrTP0eN+g0l2fHbwUxxkQ7iqtz2sB9n+6uOFX8N3Cx19ovDI6O6zPdNSXGckRscG4DSRyHPY5G56wAYojonfM92pqqF/yiEgSxSNbp6Rhy07E7OHnNI6iOsbrKbnxlD83tio5ZpZAD0UbmnTFnmezwH+6w+fLLVaonag7onyYIxhrnnA/pJ9RB61f1U9mdw+yKnhYLiOhEkghf52NRe7U4nBOprSPRywkDDgWsbdOnx/M5eHC4YIKbW4Miia575XacNBLnHbAA6ycrM7/wr/8AD7lwzU01Qyeaoc2GriY8EMqGlgkZnsdrIx6+o4WIsfNFNBU0shjnp3iSJ45tcCCDv3gK9prnWOuHy65uklfHLLU08ekBoqJCCXEDqyAf4WjluIy/Fy2b2jrtE2GqliYdTI5XtB7QDgLKOFfqej/OD4liVUMBgCy3hX6no/zo+JWiUfe42/O9Y7SM9ISumeF6eGDh62iGJkYdSROIY0AE6RvsuaL59a1n+oV03w3vw5aif8nD8AQSSxrygT00PCNxFVLHH0sZZGHuA1v6mjPM7cu5ZKtfeWO3y1PD0NXC57vksuXRtOA4Ht8QB/EovQ0wW55KnM7o2FzQ3d2Bqdge3Co090jqGF0NOWgHBLnKt8rqmvDotMbh3ArCTWX0eqcvkZlwaHdjc4x4gd6q7N9I6fWQrAVFdJMJZi6UNxnVkBw7DjC9tptXpb+tM8ZBcySyHMtLMWvhaNBa4jS7VnV610jwrdfnvhy3XLUNU8DTLp5CQbOH8wIXN9PCG9I3HmvZpK2x5DbmZbTcbS8nVRziRg7GP6v5mvPitcOhs9ERXBERAREQEREBERAULxl/he5DtgI9uymlBcanHDFbjrDAPF7Qg5s4scTxRcifvs+BqtYnWrQ11RQzy1A5htUGxynPNw06uvGAR4FVuJ3Z4muYPPW34GqbZebCy3iKSm0zmIwvfSW+Iaw6mcxxDzpcP2kh7c9E08ySYs2izbF56h1XMaiQsLn7eYAGtAGA1oHIAAADqAC8Y5dykOIbhDc7zV1tO2YRyluhsrg54AYGjUQTk7c+vrUepnyJSPD1omv14p7bTyxxyS6sGTJ5AnkNyduQz/cTU3BZp7PPcZa4yltK2cCGn1Na8xOlAc/V6GlgaHY9J4GMc8Whmkp5hNA58crc6XtOC3PWD1Hfmvk9TI9rWzzyyNbG2Joe8uDWDcNGeTR1DkEFrVnZo61l3Cn1PR/nP7rC5nF7gc7BZnwr5tstrDykq3uPcGh5z/SPags72P8AqtZ/qFdM8M/4btX5OH4AudLhRGaeebGS4k5XSFlhNPZqCB2xip42HwaAgvlYXqgbc7TV0ZAJmiLRkcjzHvwr9fMIOTqekbDJUaANBnIZt1YB/vhXLIwOpXVUMVlTgYHymX4iF4DVz59izqqm5yUxpGQxyxOboJzjA71dRx4GDzUfNcujn6ER65DyaxucqWA3z1plbdD7pxS1Dh1Rkj1gbLPfIXE91de6k8uhpRnqLnBxPs29qwSXzbfVnqEbgtieQZsppbtIT+xLaRrRj7QjJd7i32K/H0NroiLUEREBERAREQEREBQPHGBwtcHk4ETGyHPLDXBx9wU8rS6UUdytlZQzfRVML4n+pzcIOVOMWOg4prs7a3tdntGgKJ+U7Y0DCmONZXyXYMqo3R10EfQVbCMASNcQSO45yO7CgM9uEFY1D8Abbd68dNJ973KkXtHpH2qrHDNJ9HDI/wDC0u/RB51u+8favg2V5FarjL6NFN4s0/qriLh26Sc6cMHa+Rv9s/ogiTywsqsNaz5JSQRB2WNfF/G9+SfBvxKJqLK+BuXVEchHpiPcMHbnl4KnTTOppOkYdOjOnP2R1lBs200IuVxpaJgz08oYcfd6z4AH2Le4AAwOS1d5HeHqyOA3+7RujMzNNHE5uCGHm8/i2x3b75W0kBEVvXVbKKjqKqb6OCJ0jvUASf0Qc3VkemtqQeYnlz/OVTIDQ4nkFVLnzOfLIcve4ucccyTkr5IxpYWufpyue/aLKCWl6ZoijaxzttWkDf8AVXmFJyXOCS3MoaK22ykiaAHywRAzS4+/ITk77qPICii4pLZUXdottI5gqKx3RxueTpBwTk4B22W4PJrwxVcKWSakr5IJKiWfpCYHOc0NDGMaMkDJwzfbmVhXkvojPxNDKWgimhklz3nDB8RW48DsWnF0PqIi1BERAREQEREBERAREQa78oPk6h4hqm3a3xw/OLQBJFMMMqRjrI5Ox/blzWu6vhGsofpeEJR26IXT4/kYR/zmuh8DsTCDml0zqWV8TaHoJG7FhpHNLfWCWoayrd6McvsaP1ytw+UHhUXSnNxoI8V0A89rRvMwdXrHV7OzGpCQd8Agc/WqXKwW/S1r+er+KbHwgLx0NQ/03RuHY90kg9hKvDvzXw789/Wq+9EbPbjUaRUTu0N9FrGhoHhyVOioWUNVHUMAkkie2RokGW5ByMjrCleQwFTkGTkc8YVbaOg7BdYb1aae4U3oyt85ud2OGzmn1HKk1pryZcSC1XE2+pkAoq1w0l2wjkxgHuzyPeAtx52zn3LTC7g9LDvKlcvkXC8kDXYkrZGwjHPT6TvcCPFZitLeUy7i5cRPp4n5p6BpiGOuQnLz7g3+EqcrqDE2jAwF4lphUzNZPK+ODUOkdGzU9o68NyN/WVUJP2RlWL6aoqHyOdI2NrcYa9xJPqwCB4kLEX8lLQ007/m41ZgIGTVlpeSPwgAerdeMZdgI0aWBpd5zRjPavVO18srWRML3uIYxo+047ADxVbRtTySUBjt9dcHbGeURMP7rBzHi4jwWwFHWC3MtFmo7ew5MEYa49rubj4nJUiujGamgREVgREQEREBERAREQEREBERB8wFq/wAovCTqd8l6tURMJJdVQtGdHa8Ds7ezny5bRXwtB5gH1qLNjm0PyN8DPf7E1hZ7xzwBJA+S5cPxa4Tl0tG0ec3rJj7R+77OYC1wZCDp2DhsQdsLG/BclwXgvVv0vevhkUCo53P7pOVuDyc8XtucDLVcZcV0bf2T3H6do7/vD3jftxpgybYX2GrdBK1zXOBa4OaWnBaRyII5KJbj0N/cc8SN4cszpWOb8snyylYRnLvvEdjeZ8B1rRGvJJJJJOSScknnk96uLxca+81DayuqXVUrWBjS7GzR1ADko/UWOwW5Hepyz2Kk8rzG7owdfVjC80/SMy6Z5fnqKogO16ulcR2FVW63nI3VdiqXFx0grPvJbYHV10Nznb/9aiOGHGz5SP8AxB9pCxv" alt="Smartwatch Pro">
+        <p>
+            Elevate your fitness journey with the Smartwatch Pro. Experience cutting-edge features including heart rate monitoring, fitness tracking, water-resistant design, and seamless Bluetooth connectivity.
+        </p>
+        <p>
+            <strong>Features:</strong>
+            <ul>
+                <li>Heart rate monitoring</li>
+                <li>Fitness tracking</li>
+                <li>Water-resistant</li>
+                <li>Bluetooth connectivity</li>
+            </ul>
+        </p>
+        <p><strong>Price:</strong> $199.99</p>
+        <a id="buy-now-btn" href="#" onclick="purchase()">Buy Now</a>
+    </div>
+
+    <script>
+        function purchase() {
+            alert('Thank you for your purchase!');
+            // Additional logic for processing the purchase can be added here
+        }
+    </script>
+
+</body>
+</html>
